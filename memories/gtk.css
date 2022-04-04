@@ -1,8 +1,12 @@
-.xfce4-panel button, .genmon_plugin {
+/* Memories theme by mehedirm6244 */
+
+.xfce4-panel button
+{
 	transition: 0.2s;
-	border-radius: 3;
-	margin: 5;
 	box-shadow: none;
+	background-image: none;
+	border-radius: 5;
+	margin: 5;
 	background-color: rgba(255,255,255,0.04);
 }
 .xfce4-panel.background .tasklist button { font-size: 12px; }
@@ -11,16 +15,16 @@
 .xfce4-panel.background button:active:hover, 
 .xfce4-panel.background .tasklist button:active,
 .xfce4-panel.background .tasklist button:hover, 
-.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.07); }
-.xfce4-panel button:checked {
+.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.03); }
+.xfce4-panel button:checked
+{
 	background-color: rgba(255,255,255,0.05);
 	/*box-shadow: inset 2px 0 #597999;*/
 }
 
 .tasklist { -XfceTasklist-max-button-length: 160; }
 
-.genmon_plugin { padding: 5px 5px 5px 10px; }
-.genmon_plugin button, .genmon_plugin button:hover { background-color: transparent; }
+#genmon-12 button, #genmon-13 button { padding: 10px; }
 
 #pager-4 grid {
 	background-color: rgba(255,255,255,0.05);
@@ -29,29 +33,34 @@
 }
 #pager-4 button {
 	padding: 3;
-	font-size: 14px;
 	margin: 5;
-	background-color: transparent;
+	font-size: 12px;
 }
-#pager-4 button:hover { background-color: rgba(255,255,255,0.05); }
-#pager-4 button:checked {
+#pager-4 button:checked
+{
 	box-shadow: none;
-	background-color: #41707e;
+	background-color: #bf616a;
 	color: #EEE;
 }
 
 #docklike-plugin button
 {
-	margin: 5 2.5;
+	margin: 5;
 	padding: 0 7;
 }
-#docklike-plugin button:last-child { margin-right: 5; }
-#docklike-plugin button:first-child { margin-left: 5; }
-#docklike-plugin .hover_group { background-color: rgba(255,255,255,0.07); }
+
+#docklike-plugin .hover_group { background-color: rgba(255,255,255,0.05); }
 
 #separator-1, #separator-3 { color: rgba(255,255,255,0.2); }
 
-#whiskermenu-8 #whiskermenu-button:checked { background-color: #41707e; }
+#whiskermenu-8 #whiskermenu-button
+{
+	background-color: #bf616a;
+	margin: 5;
+}
+
+#whiskermenu-8 #whiskermenu-button:hover { background-color: rgba(255,255,255,0.15); }
+#whiskermenu-8 #whiskermenu-button:checked, #genmon-12 button:checked { background-color: #bf616a; }
 
 window#whiskermenu-window>frame>border { border: 5px solid transparent; }
 window#whiskermenu-window scrolledwindow { margin: 2px; }
@@ -67,17 +76,29 @@ window#whiskermenu-window scrolledwindow { margin: 2px; }
 	-ThunarAbstractIconView-column-spacing: 10;
 }
 
+.thunar .sidebar
+{
+	border: 5px solid transparent;
+	/*background-image: url("/home/mehedi/bg.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 100%;*/
+}
 .thunar .standard-view .view { padding: 5px 14px; }
-.thunar .sidebar .view { padding-left: 0; }
+.thunar .sidebar .view
+{
+	padding: 3px 4px 3px 0; background-color: transparent;
+	border-radius: 3px;
+}
 .thunar .sidebar .view:hover { background-color: rgba(255,255,255,0.05); }
 .thunar .sidebar .view:selected {
 	background-color: rgba(255,255,255,0.1);
-	border-left: 2px solid #41707e;
+	border-left: 2px solid #bf616a;
 }
 
 VteTerminal, vte-terminal { padding: 15px; }
 
-.xfsm-logout-dialog { border: 2px solid #181f21; }
+.xfsm-logout-dialog { border: 2px solid #2f343f; }
 .xfsm-logout-dialog * { margin: 3px; }
 
 #XfceNotifyWindow { border: none; }
@@ -88,13 +109,15 @@ VteTerminal, vte-terminal { padding: 15px; }
 
 menu, .context-menu { border: none; }
 menu menuitem, .menu menuitem, .context-menu menuitem { padding: 6px 16px; }
-menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover
+{
 	background-color: rgba(255,255,255,0.1);
 	color: white;
 }
-.csd.popup decoration { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 0px #181f21; }
+.csd.popup decoration { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 0px #22242d; }
 
-#xfwm-tabwin {
+#xfwm-tabwin
+{
 	border-radius: 5px;
 	border: none;
 }
@@ -102,8 +125,11 @@ menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
 
 headerbar label { color: inherit; }
 
-calendar {
+treeview { padding: 1px 5px; }
+
+calendar
+{
 	border: none;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-size: 14px;
 }

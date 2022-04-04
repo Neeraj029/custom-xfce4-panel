@@ -1,0 +1,111 @@
+/* everblush inspired theme by mehedirm6244) */
+
+.xfce4-panel button, .genmon_plugin {
+	transition: 0.2s;
+	border-radius: 3;
+	margin: 5;
+	box-shadow: none;
+	background-color: rgba(255,255,255,0.04);
+}
+.xfce4-panel.background .tasklist button { font-size: 12px; }
+.xfce4-panel.background button:active, 
+.xfce4-panel.background button:hover, 
+.xfce4-panel.background button:active:hover, 
+.xfce4-panel.background .tasklist button:active,
+.xfce4-panel.background .tasklist button:hover, 
+.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.07); }
+.xfce4-panel button:checked {
+	background-color: rgba(255,255,255,0.05);
+	/*box-shadow: inset 2px 0 #597999;*/
+}
+
+.tasklist { -XfceTasklist-max-button-length: 160; }
+
+.genmon_plugin { padding: 5px 5px 5px 10px; }
+.genmon_plugin button, .genmon_plugin button:hover { background-color: transparent; }
+
+#pager-4 grid {
+	background-color: rgba(255,255,255,0.05);
+	margin: 5;
+	border-radius: 5;
+}
+#pager-4 button {
+	padding: 3;
+	font-size: 14px;
+	margin: 5;
+	background-color: transparent;
+}
+#pager-4 button:hover { background-color: rgba(255,255,255,0.05); }
+#pager-4 button:checked {
+	box-shadow: none;
+	background-color: #41707e;
+	color: #EEE;
+}
+
+#docklike-plugin button
+{
+	margin: 5 2.5;
+	padding: 0 7;
+}
+#docklike-plugin button:last-child { margin-right: 5; }
+#docklike-plugin button:first-child { margin-left: 5; }
+#docklike-plugin .hover_group { background-color: rgba(255,255,255,0.07); }
+
+#separator-1, #separator-3 { color: rgba(255,255,255,0.2); }
+
+#whiskermenu-8 #whiskermenu-button:checked { background-color: #41707e; }
+
+window#whiskermenu-window>frame>border { border: 5px solid transparent; }
+window#whiskermenu-window scrolledwindow { margin: 2px; }
+#whiskermenu-window button { font-size: 14px; }
+
+#whiskermenu-window treeview { padding: 7px 0px 7px 10px; }
+#whiskermenu-window treeview:hover { background-color: rgba(255,255,255,0.1); }
+#whiskermenu-window iconview { font-size: 12px; padding: 5px 0; }
+#whiskermenu-window iconview:hover { background-color: rgba(255,255,255,0.1); }
+
+* {
+	-ThunarAbstractIconView-row-spacing: 10;
+	-ThunarAbstractIconView-column-spacing: 10;
+}
+
+.thunar .standard-view .view { padding: 5px 14px; }
+.thunar .sidebar .view { padding-left: 0; }
+.thunar .sidebar .view:hover { background-color: rgba(255,255,255,0.05); }
+.thunar .sidebar .view:selected {
+	background-color: rgba(255,255,255,0.1);
+	border-left: 2px solid #41707e;
+}
+
+VteTerminal, vte-terminal { padding: 15px; }
+
+.xfsm-logout-dialog { border: 2px solid #181f21; }
+.xfsm-logout-dialog * { margin: 3px; }
+
+#XfceNotifyWindow { border: none; }
+#XfceNotifyWindow progressbar { border-radius: 5px; }
+#XfceNotifyWindow progressbar progress { min-height: 4px; }
+#XfceNotifyWindow progressbar trough { min-height: 4px; }
+#XfceNotifyWindow image { -gtk-icon-transform: scale(0.8); }
+
+menu, .context-menu { border: none; }
+menu menuitem, .menu menuitem, .context-menu menuitem { padding: 6px 16px; }
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
+	background-color: rgba(255,255,255,0.1);
+	color: white;
+}
+.csd.popup decoration { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 0px #181f21; }
+
+#xfwm-tabwin {
+	border-radius: 5px;
+	border: none;
+}
+#xfwm-tabwin button { padding: 6px 10px; }
+
+headerbar label { color: inherit; }
+
+calendar {
+	border: none;
+	border-radius: 3px;
+	font-size: 14px;
+}
