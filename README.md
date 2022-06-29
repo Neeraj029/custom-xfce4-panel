@@ -12,7 +12,7 @@ or
 #### 2. Copy xfce4-panel.xml to xfce4 config folder 
 1. `killall xfconfd`
 
-2. `cp my-cfg-0.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml`
+2. `cp xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml`
 
 3. `xfce4-panel -r`
 
